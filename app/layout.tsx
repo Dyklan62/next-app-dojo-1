@@ -1,9 +1,10 @@
 import '@/app/ui/global.css';
 import React, { PropsWithChildren } from 'react';
+import { inter } from '@/app/ui/font';
 
 const RootLayout = ({ children }: PropsWithChildren) => (
-  <html lang="en">
-    <body>{children}</body>
+  <html lang="fr">
+    <body className={`${inter.className} antialiased`}>{children}</body>
   </html>
 );
 
